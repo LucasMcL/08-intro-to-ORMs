@@ -1,0 +1,23 @@
+{
+  "name": "knex-bookshelf",
+  "version": "1.0.0",
+  "description": "Node ORM exercise",
+  "main": "index.js",
+  "scripts": {
+    "db:reset": "knex migrate:rollback && knex migrate:latest",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasMcL/08-intro-to-ORMs.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LucasMcL/08-intro-to-ORMs/issues"
+  },
+  "homepage": "https://github.com/LucasMcL/08-intro-to-ORMs#readme",
+  "dependencies": {
+    "knex": "^0.12.9"
+  }
+}
