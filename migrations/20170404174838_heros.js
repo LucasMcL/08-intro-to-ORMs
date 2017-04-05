@@ -1,7 +1,7 @@
 exports.up = function(knex, Promise) {
 	return knex.schema
     .createTable('heros', function(table) {
-      table.increments('hero').primary();
+      table.increments('hero_id').primary();
       table.string('hero_name').notNullable();
     });
 };
