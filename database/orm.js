@@ -27,7 +27,7 @@ const Hero = bookshelf.Model.extend({
 	},
 
 	weapons: function() {
-		return this.belongsToMany('Weapon', 'hero_id').through('HeroWeapon', 'hero_id')
+		return this.belongsToMany('Weapon').through('HeroWeapon', 'hero_id')
 	}
 }, {
   byName: function(name) {
@@ -43,7 +43,7 @@ const Weapon = bookshelf.Model.extend({
 	tableName: 'weapons',
 
 	heros: function() {
-		return this.belongsToMany('Hero', 'weapon_id').through('HeroWeapon', 'weapon_id')
+		return this.belongsToMany('Hero').through('HeroWeapon', 'weapon_id')
 	}
 })
 // Register model for registry plugin
