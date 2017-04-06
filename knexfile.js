@@ -4,6 +4,12 @@ module.exports = {
     client: 'pg',
     connection: {
       database: 'knex_practice'
+    },
+    migrations: {
+      directory: __dirname + '/database/migrations'
+    },
+    seeds: {
+      directory: __dirname + '/database/seeds'
     }
   },
 

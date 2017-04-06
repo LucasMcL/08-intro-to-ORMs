@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/LucasMcL/08-intro-to-ORMs#readme",
   "dependencies": {
+    "bookshelf": "^0.10.3",
     "knex": "^0.12.9"
   }
 }

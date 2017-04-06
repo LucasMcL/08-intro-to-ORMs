@@ -4,8 +4,8 @@ exports.up = function(knex, Promise) {
 			table.integer('hero_id').notNullable()
 			table.integer('weapon_id').notNullable()
 
-			table.foreign('hero_id').references('heros.hero_id')
-			table.foreign('weapon_id').references('weapons.weapon_id')
+			table.foreign('hero_id').references('heros.id')
+			table.foreign('weapon_id').references('weapons.id')
 		})
 };
 
